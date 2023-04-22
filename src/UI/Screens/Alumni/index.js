@@ -15,22 +15,22 @@ const Alumni = () => {
     {
       name: "Avishek Golder",
       desg: "SDE 4",
-      email: "immharshchoudhary@gmail.com",
-      lin: "https://www.linkedin.com/in/harsh-choudhary-974296228/",
+      email: "abhishekgolder@gmail.com",
+      lin: "https://www.linkedin.com/in/avishek-golder/",
       image:alumni4
     },
     {
       name: "Divesh Dhanuk Raj",
       desg: "CEO",
       email: "ddraj203@gmail.com",
-      lin: "https://www.linkedin.com/in/harsh-choudhary-974296228/",
+      lin: "https://www.linkedin.com/in/divesh-dhanuk-raj-7a4b35247/ ",
       image:alumni3
     },
     {
       name: "Mrinmoy Saikia",
       desg: "SDE",
       email: "saikiaraj4444@gmail.com",
-      lin: "https://www.linkedin.com/in/harsh-choudhary-974296228/",
+      lin: "https://www.linkedin.com/in/mrinmoy-saikia-40a5aa227/",
       image:alumni2
     }
   ];
