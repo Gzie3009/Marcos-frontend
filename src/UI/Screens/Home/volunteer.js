@@ -24,7 +24,7 @@ const Volunteer = () => {
                 <div class="p-6">
                   <h2 class="text-2xl font-medium title-font text-center text-gray-900 mt-5">Blood Donation</h2>
                   
-                  <button onClick={handleClick} class="flex mx-auto mt-6 text-white bg-[#0057FF] border-0 py-2 px-5 focus:outline-none hover:bg-blue-700 rounded">Button</button>
+                  <button onClick={handleClick} class="flex mx-auto mt-6 text-white bg-[#0057FF] border-0 py-2 px-5 focus:outline-none hover:bg-blue-700 rounded">Join Now</button>
                 </div>
               </div>
             </div>
@@ -35,7 +35,7 @@ const Volunteer = () => {
                 <div class="p-6">
                   <h2 class="text-2xl font-medium title-font text-center text-gray-900 mt-5">Beach Clean Up</h2>
                   
-                  <button onClick={handleClick} class="flex mx-auto mt-6 text-white bg-[#0057FF] border-0 py-2 px-5 focus:outline-none hover:bg-blue-700 rounded">Button</button>
+                  <button onClick={handleClick} class="flex mx-auto mt-6 text-white bg-[#0057FF] border-0 py-2 px-5 focus:outline-none hover:bg-blue-700 rounded">Join Now</button>
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Volunteer = () => {
                 <div class="p-6">
                   <h2 class="text-2xl font-medium title-font text-center text-gray-900 mt-5">Teach Roadside Students</h2>
                   
-                  <button onClick={handleClick} class="flex mx-auto mt-6 text-white bg-[#0057FF] border-0 py-2 px-5 focus:outline-none hover:bg-blue-700 rounded">Button</button>
+                  <button onClick={handleClick} class="flex mx-auto mt-6 text-white bg-[#0057FF] border-0 py-2 px-5 focus:outline-none hover:bg-blue-700 rounded">Join Now</button>
                 </div>
               </div>
             </div>
