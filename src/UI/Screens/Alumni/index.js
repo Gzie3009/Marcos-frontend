@@ -37,7 +37,7 @@ const Alumni = () => {
   return (
     <>
       <div class="about-section">
-        <h1 className="text-7xl font-bold">Alumini and Experts</h1>
+        <h1 className="text-7xl font-bold">Alumni and Experts</h1>
         <p className="text-2xl">
           We are here to help you out and solve your challenges and Queries.
         </p>

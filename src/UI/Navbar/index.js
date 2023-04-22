@@ -44,7 +44,7 @@ const Navbar = () => {
               </Link>
                 <>
                   <Link className="px-5" to={"/alumni"}>
-                    Alumini
+                    Alumni
                   </Link>
                   <Link className="px-5" to={"/oppourtunity"}>
                     Opportunities
