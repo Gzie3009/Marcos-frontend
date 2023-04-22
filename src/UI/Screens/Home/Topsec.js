@@ -14,7 +14,7 @@ const Topsec = () => {
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Ask anything , anywhere
         <br class="hidden lg:inline-block"/>anywhere.
       </h1>
-      <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+      <p class="mb-8 leading-relaxed">Welcome!! In the world of exposure different opportunities, Seminar, Webinar and Mentor guidance. Marcos provide you a one stop solution for all the problems. You can get updates regarding the different competitions and Jobs, Opportunities and can take guidance from their seniors and mentors</p>
       {d?<div class="flex justify-center">
         <Link to="/feed" class="inline-flex text-white bg-[#0057ff] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Our Mentors</Link>
         <Link to="/oppourtunity" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">See Jobs</Link>
