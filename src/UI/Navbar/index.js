@@ -17,13 +17,10 @@ const Navbar = () => {
               <Link className="px-5" to={"/alumni"}>
                 Alumni
               </Link>
-              <Link className="px-5" to={"/profile"}>
-                Profile
-              </Link>
-              <Link className="px-5" to={"/alumni"}>
+              <Link className="px-5" to={"/oppourtunity"}>
                 Oppourtunity
               </Link>
-              <Link className="px-5" to={"/profile"}>
+              <Link className="px-5" to={"/webinars"}>
                 Webinars
               </Link>
               <Link className="px-5" to={"/profile"}>
