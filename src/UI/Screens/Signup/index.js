@@ -1,14 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
+    const [name,setName]=useState("")
+    const [email,setEmail]=useState("")
+    const [password,setPassword]=useState("")
+    const handleSignup =async (e) => {
+        const signupData={
+            name,email,password
+        }
+        e.preventDefault()
+        const res=await fetch("http://localhost:3010/users/register", {
+          method: "POST",
+          body: JSON.stringify(signupData),
+          headers: {
+              "Content-type": "application/json; charset=UTF-8"
+          }
+      })
+      const data=await res.json()
+      if(data){
+        alert("registration Successfull")
+      }
+    }
+
   return (
     <>
-        <div class="sec">
-          <div class="h2">
-            <h1>Login</h1>
+        <div className="w-screen grid place-items-center">
+        <div class="mainx">
+          <div class="headr text-5xl font-bold">
+            <h1>Register</h1>
           </div>
-          <div class="verify">
-            <p>Login now to track all your expensex and income at a place!</p>
+          <div class="create mt-5 mb-10">
+            <p>
+              Create an account to access all the features of <b className="text-2xl">Marcos!</b>
+            </p>
           </div>
           <div class="inp">Email</div>
           <input
@@ -18,8 +43,23 @@ const Signup = () => {
             name="enail"
             id="email"
             placeholder="Ex.abc@example.com"
+            value={email}
+            onChange={(e)=>setEmail(e.target.value)}
           />
           <br />
+          <br />
+          <div class="naam">Your Name</div>
+          <div>
+            <input
+              class="rginput"
+              type="text"
+              name="input"
+              id="name"
+              placeholder="Ex.Saul Ramirez"
+              value={name}
+            onChange={(e)=>setName(e.target.value)}
+            />
+          </div>
           <br />
           <div class="pd">Your Password</div>
           <div>
@@ -29,17 +69,20 @@ const Signup = () => {
               name="pwd"
               id="pwd"
               placeholder="Min:6 char **"
+              value={password}
+            onChange={(e)=>setPassword(e.target.value)}
             />
           </div>
-          <p class="forgot">Forgot Password?</p>
-          <div class="rg">Login</div>
           <br />
-          <hr class="line" />
-          <div class="go">
-            <div class="do">Don't have an account?&nbsp;</div>
-            <div class="gt">Register</div>
+          <br />
+          <button onClick={handleSignup} class="rg">Register</button>
+
+          <div class="w-full flex mt-5">
+            <div class="">Already have and account?&nbsp;</div>
+            <Link to="/login" class="lg">Login</Link>
           </div>
         </div>
+    </div>
     </>
   )
 }

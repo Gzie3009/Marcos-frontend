@@ -15,8 +15,8 @@ const Routings = () => {
         <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>}></Route>
-            <Route path='/register' element={<Login/>}></Route>
-            <Route path='/login' element={<Signup/>}></Route>
+            <Route path='/register' element={<Signup/>}></Route>
+            <Route path='/login' element={<Login/>}></Route>
             <Route path='/feed' element={<Feed/>}></Route>
             <Route path='/oppourtunity' element={<Oppourtunities/>}></Route>
             <Route path='/alumni' element={<Alumni/>}></Route>

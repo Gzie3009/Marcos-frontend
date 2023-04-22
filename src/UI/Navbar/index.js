@@ -4,7 +4,7 @@ import logo from "../../Assets/Homepage/favicon.png"
 const Navbar = () => {
   return (
     <>
-      <div className="px-14 bg-white w-screen fixed">
+      <div className="px-14 bg-white w-screen fixed z-50">
         <div className="h-20 mt-2 w-full flex place-items-center">
           <div className="w-1/2 flex">
             <Link to="/" className="">

@@ -1,15 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./login.css";
 const Login = () => {
+    const [email,setemail]=useState('')
+    const [password,setpassword]=useState('')
+    const handleLogin = async(e) => {
+        const loginData={
+            email,password
+        }
+        e.preventDefault()
+        const res=await fetch("http://localhost:3010/users/signin", {
+          method: "POST",
+          body: JSON.stringify(loginData),
+          headers: {
+              "Content-type": "application/json; charset=UTF-8"
+          }
+      })
+      const data=await res.json()
+      if(data){
+        alert("Login Successfull")
+      }
+    }
+
   return (
-    <>
+    <div className="w-screen grid place-items-center">
         <div class="mainx">
-          <div class="headr">
-            <h1>Register</h1>
+          <div class="headr text-5xl font-bold">
+            <h1>Login</h1>
           </div>
-          <div class="create">
+          <div class="create mt-5 mb-10">
             <p>
-              Create an account to access all the features of <b>Maxpense!</b>
+              Create an account to access all the features of <b className="text-2xl">Marcos!</b>
             </p>
           </div>
           <div class="inp">Email</div>
@@ -20,35 +41,12 @@ const Login = () => {
             name="enail"
             id="email"
             placeholder="Ex.abc@example.com"
+            value={email}
+            onChange={(e)=>setemail(e.target.value)}
           />
-
-          <section class="Flexcontainer">
-            <div class="a">
-              <img src="dlogin images/@.png" alt="" />
-            </div>
-            <div class="e1">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Ex.abc@example.com"
-              />
-            </div>
-          </section>
           <br />
           <br />
-          <div class="naam">Your Name</div>
-          <div>
-            <input
-              class="rginput"
-              type="text"
-              name="input"
-              id="name"
-              placeholder="Ex.Saul Ramirez"
-            />
-          </div>
-          <br />
-          <div class="pd">Your Password</div>
+          <div class="pd">Password</div>
           <div>
             <input
               class="rginput"
@@ -56,18 +54,20 @@ const Login = () => {
               name="pwd"
               id="pwd"
               placeholder="Min:6 char **"
+              value={password}
+            onChange={(e)=>setpassword(e.target.value)}
             />
           </div>
           <br />
           <br />
-          <div class="rg">Register</div>
+          <button onClick={handleLogin} class="rg">Login</button>
 
           <div class="lframe">
-            <div class="last">Already have and account?&nbsp;</div>
-            <div class="lg">Login</div>
+            <div class="last">New to Marcos?&nbsp;</div>
+            <Link to="/register" class="lg">Register</Link>
           </div>
         </div>
-    </>
+    </div>
   );
 };
 
