@@ -1,7 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router'
+import { toast } from 'react-toastify';
 const Admin = () => {
     const navigate = useNavigate()
+    const [show,setShow]=useState(0)
+    const verify=()=>{
+      const email=localStorage.getItem("email")
+      if(email==="Admin@gmail.com")
+      {
+        setShow(1)
+      }
+      else{
+        navigate("/")
+      }
+    }
   const [userData, setUserData] = useState();
   const [oppoData, setOppoData] = useState();
   const [intern,setIntern]=useState();
@@ -29,7 +41,8 @@ const Admin = () => {
       });
     const x1=res.json()
     if(x1.status){
-        alert("Refresh Page")
+        toast.success("Deleted Successfully")
+        toast.success("Refresh to see changes")
     }
   };
   const handleDelete2 = async (e) => {
@@ -39,7 +52,8 @@ const Admin = () => {
       })
     const x1=res.json()
     if(x1.status){
-        alert("Refresh Page")
+        toast.success("Deleted Successfully")
+        toast.success("Refresh to see changes")
     }
   };
 
@@ -50,7 +64,8 @@ const Admin = () => {
 });
     const x1=res.json()
     if(x1.status){
-        alert("Refresh Page")
+        toast.success("Deleted Successfully")
+        toast.success("Refresh to see changes")
     }
   };
 
@@ -61,17 +76,20 @@ const Admin = () => {
       })
     const x1=res.json()
     if(x1.status){
-        alert("Refresh Page")
+        toast.success("Deleted Successfully")
+        toast.success("Refresh to see changes")
     }
   };
 
 
   useEffect(() => {
+    verify();
     fetchData();
   }, []);
 
   return (
     <>
+    {show? 
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
@@ -214,6 +232,7 @@ const Admin = () => {
           </div>
         </div>
       </section>
+      :null}
     </>
   );
 };

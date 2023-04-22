@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./login.css";
+import {loginUser} from "../../../store/slice/userSlice"
+import { useNavigate } from "react-router-dom";
+import {useSelector,useDispatch} from "react-redux"
+import { toast } from 'react-toastify';
 const Login = () => {
+  const dispatch=useDispatch()
+  const navigate=useNavigate()
     const [email,setemail]=useState('')
     const [password,setpassword]=useState('')
     const handleLogin = async(e) => {
@@ -18,8 +24,15 @@ const Login = () => {
       })
       const data=await res.json()
       if(data.status===200){
-        alert("Login Successfull")
+        dispatch(loginUser())
+        toast.success("Logged In successfully")
         localStorage.setItem("JWT",data.token);
+        localStorage.setItem("email",data.email);
+        localStorage.setItem("name",data.name);
+        navigate("/")
+      }
+      else{
+        toast.error("Failed to Login")
       }
     }
 

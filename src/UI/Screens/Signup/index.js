@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify';
 const Signup = () => {
     const [name,setName]=useState("")
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
+    const navigate=useNavigate()
     const handleSignup =async (e) => {
         const signupData={
             name,email,password
@@ -18,8 +19,12 @@ const Signup = () => {
           }
       })
       const data=await res.json()
-      if(data){
-        alert("registration Successfull")
+      if(data.status===200){
+        toast.success("Registered Successfully")
+        navigate("/")
+      }
+      else{
+        toast.error("Failed to register")
       }
     }
 

@@ -1,24 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <>
       <div className='border bg-gray-100 flex justify-center'>
-          <p className='underline p-2 py-5 text-[#0057ff]'>
+          <Link to={"/about"} className='underline p-2 py-5 text-[#0057ff]'>
             About Us
-          </p>
-          <p className='underline p-2 py-5 text-[#0057ff]'>
+          </Link>
+          <Link to={"/contact"} className='underline p-2 py-5 text-[#0057ff]'>
             Contact Us
-          </p>
-          <p className='underline p-2 py-5 text-[#0057ff]'>
+          </Link>
+          <Link to={"/tandc"} className='underline p-2 py-5 text-[#0057ff]'>
             User Policy
-          </p>
-          <p className='underline p-2 py-5 text-[#0057ff]'>
+          </Link>
+          <Link to={"/tandc"} className='underline p-2 py-5 text-[#0057ff]'>
             Data Privacy
-          </p>
-          <p className='underline p-2 py-5 text-[#0057ff]'>
+          </Link>
+          <Link to={"/tandc"} className='underline p-2 py-5 text-[#0057ff]'>
             Terms of use
-          </p>
+          </Link>
       </div>
 
       <div class="bg-gray-100">

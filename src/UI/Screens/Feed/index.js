@@ -7,11 +7,11 @@ const Feed = () => {
     const d1 = await res.json();
     if (d1) {
       setData(d1.post);
-      console.log(d1.post);
     }
   };
   useEffect(() => {
     fetchData();
+
   }, []);
 
   return (
