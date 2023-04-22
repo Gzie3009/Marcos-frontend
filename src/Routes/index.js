@@ -5,6 +5,9 @@ import Navbar from '../UI/Navbar'
 import Footer from '../UI/Footer'
 import Login from '../UI/Screens/Login'
 import Feed from '../UI/Screens/Feed'
+import Oppourtunities from '../UI/Screens/Oppoutunities'
+import Alumni from '../UI/Screens/Alumni'
+import Webinars from '../UI/Screens/Webinars'
 const Routings = () => {
   return (
     <>
@@ -13,6 +16,9 @@ const Routings = () => {
             <Route path='/' element={<Home/>}></Route>
             <Route path='/login' element={<Login/>}></Route>
             <Route path='/feed' element={<Feed/>}></Route>
+            <Route path='/oppourtunities' element={<Oppourtunities/>}></Route>
+            <Route path='/alumni' element={<Alumni/>}></Route>
+            <Route path='/webinars' element={<Webinars/>}></Route>
         </Routes>
         <Footer/>
     </>

@@ -20,6 +20,15 @@ const Navbar = () => {
               <Link className="px-5" to={"/profile"}>
                 Profile
               </Link>
+              <Link className="px-5" to={"/alumni"}>
+                Oppourtunity
+              </Link>
+              <Link className="px-5" to={"/profile"}>
+                Webinars
+              </Link>
+              <Link className="px-5" to={"/profile"}>
+                Profile
+              </Link>
             </div>
           </div>
           <div className="w-1/2 flex px-10">
