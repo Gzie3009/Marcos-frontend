@@ -1,0 +1,106 @@
+
+        .mainx{
+            margin: 100px;
+            border: 20px solid ;
+            border-color: #575DFB;
+            border-radius: 50px;
+            padding: 75px;
+            height: 500px;
+            width: 250px;
+        }
+        .headr{
+            color:#575DFB;
+        }
+        .inp{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            padding: 5px;
+            
+        }
+        .rginput{
+            outline: none;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            height: 25px;
+            border-color: #575DFB;
+            padding: 5px;
+
+        }
+        .naam{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            padding: 5px;
+
+        }
+        .pd{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            padding: 5px;
+        }
+        
+        .last{
+            text-align: center;
+            color: #575DFB;
+        }
+        .lframe{
+            display: flex;
+            margin: 15px;
+        }
+        .lg{
+            color: rgb(153, 114, 150);
+            text-decoration: underline;
+        }
+        .lg:hover{
+            color: blue;
+        }
+        .sec{
+            margin: 100px;
+            border: 20px solid ;
+            border-color: #575DFB;
+            padding: 75px;
+            height: 500px;
+            width: 250px;
+            border-radius: 50px;
+        }
+        .h2{
+            color:#575DFB;
+        }
+        .forgot{
+            text-decoration: underline;
+            color:  #575DFB;
+        }
+        .line{
+            width: 265px;
+        }
+        .go{
+            display: flex;
+            margin: 16px;
+            padding: 5px;
+        }
+        .gt{
+            text-decoration: underline;
+        }
+        .gt:hover{
+            color:  #575DFB;
+        }
+        .do{
+            color:  #575DFB;
+        }
+        .rg:hover{
+    color: rgb(28, 28, 31);
+    background-color: aliceblue;
+}
+.rg{
+    text-align: center;
+    border: 1px solid black;
+    color: aliceblue;
+    background-color: blue;
+    width: 255px;
+    border-radius: 10px;
+    height: 25px;
+    padding:5px;
+}

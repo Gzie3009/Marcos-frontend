@@ -8,13 +8,15 @@ import Feed from '../UI/Screens/Feed'
 import Oppourtunities from '../UI/Screens/Oppoutunities'
 import Alumni from '../UI/Screens/Alumni'
 import Webinars from '../UI/Screens/Webinars'
+import Signup from '../UI/Screens/Signup'
 const Routings = () => {
   return (
     <>
         <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>}></Route>
-            <Route path='/login' element={<Login/>}></Route>
+            <Route path='/register' element={<Login/>}></Route>
+            <Route path='/login' element={<Signup/>}></Route>
             <Route path='/feed' element={<Feed/>}></Route>
             <Route path='/oppourtunity' element={<Oppourtunities/>}></Route>
             <Route path='/alumni' element={<Alumni/>}></Route>

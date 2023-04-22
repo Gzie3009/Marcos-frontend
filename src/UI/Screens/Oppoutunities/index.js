@@ -73,7 +73,7 @@ const Oppourtunities = () => {
 
       <h1 class="mt-6 font-bold text-center text-4xl text-bold text-blue-600 underline">Internships</h1>
     <section class="text-gray-600 body-font">
-        <div class="container px-5 pt-16 pb-24 mx-auto">
+        <div class="container px-5 pt-10 pb-24 mx-auto">
           <div class="flex flex-wrap -m-4">
             <div class="p-4 lg:w-1/3">
               <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">

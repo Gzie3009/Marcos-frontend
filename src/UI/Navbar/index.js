@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../../Assets/Homepage/favicon.png"
 const Navbar = () => {
   return (
     <>
-      <div className="px-14">
-        <div className="h-20 w-full flex place-items-center">
+      <div className="px-14 bg-white w-screen fixed">
+        <div className="h-20 mt-2 w-full flex place-items-center">
           <div className="w-1/2 flex">
-            <div className="w-1/3 ">
-              <Link to="/">Logo</Link>
-            </div>
-            <div className="w-2/3  flex justify-center">
+            <Link to="/" className="">
+              <img src={logo} className="w-40"></img>
+            </Link>
+            <div className="w-2/3 place-items-center flex justify-center">
               <Link className="px-5" to="/">
                 Home
               </Link>
@@ -35,6 +35,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <div className="h-20">|</div>
     </>
   );
 };
