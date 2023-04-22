@@ -11,7 +11,7 @@ const Signup = () => {
             name,email,password
         }
         e.preventDefault()
-        const res=await fetch("http://localhost:3010/users/register", {
+        const res=await fetch("https://marcos-backend.onrender.com/users/register", {
           method: "POST",
           body: JSON.stringify(signupData),
           headers: {

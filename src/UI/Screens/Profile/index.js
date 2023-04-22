@@ -10,7 +10,7 @@ const EventForm = () => {
     const [details,setDetails]=useState("")
     const handleSubmit=async ()=>{
         const contactData={name,title,email,type,details}
-        const res=await fetch("http://localhost:3010/users/contact",{
+        const res=await fetch("https://marcos-backend.onrender.com/users/contact",{
             method:"POST",
             headers: {
                 "Content-Type": "application/json",

@@ -19,18 +19,18 @@ const Admin = () => {
   const [intern,setIntern]=useState();
   const [research,setResearch]=useState();
   const fetchData = async () => {
-    const res1 = await fetch("http://localhost:3010/users/allusers");
+    const res1 = await fetch("https://marcos-backend.onrender.com/users/allusers");
     const x1 = await res1.json();
     setUserData(x1.users);
-    const res2 = await fetch("http://localhost:3010/users/projectpost");
+    const res2 = await fetch("https://marcos-backend.onrender.com/users/projectpost");
     const x2 = await res2.json();
     setOppoData(x2.post);
 
-    const res3 = await fetch("http://localhost:3010/users/researchpost");
+    const res3 = await fetch("https://marcos-backend.onrender.com/users/researchpost");
     const x3 = await res3.json();
     setResearch(x3.post);
 
-    const res4 = await fetch("http://localhost:3010/users/internpost");
+    const res4 = await fetch("https://marcos-backend.onrender.com/users/internpost");
     const x4 = await res4.json();
     setIntern(x4.post);
   };  

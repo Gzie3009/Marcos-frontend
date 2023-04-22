@@ -3,7 +3,7 @@ import { useEffect } from "react";
 const Feed = () => {
   const [data, setData] = useState();
   const fetchData = async () => {
-    const res = await fetch("http://localhost:3010/users/post");
+    const res = await fetch("https://marcos-backend.onrender.com/users/post");
     const d1 = await res.json();
     if (d1) {
       setData(d1.post);

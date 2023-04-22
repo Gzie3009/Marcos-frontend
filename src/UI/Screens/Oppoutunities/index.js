@@ -6,15 +6,15 @@ const Oppourtunities = () => {
   const [data2, setData2] = useState();
   const [data3, setData3] = useState();
   const getData=async ()=>{
-    const res1 = await fetch("http://localhost:3010/users/researchpost");
+    const res1 = await fetch("https://marcos-backend.onrender.com/users/researchpost");
     const x1=await res1.json();
     setData1(x1.post);
-    const res2 = await fetch("http://localhost:3010/users/projectpost");
+    const res2 = await fetch("https://marcos-backend.onrender.com/users/projectpost");
     const x2=await res2.json();
     setData2(x2.post);
 
     console.log(x2.post)
-    const res3 = await fetch("http://localhost:3010/users/internpost");
+    const res3 = await fetch("https://marcos-backend.onrender.com/users/internpost");
     const x3=await res3.json();
     setData3(x3.post);
   }
