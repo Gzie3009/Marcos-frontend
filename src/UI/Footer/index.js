@@ -12,13 +12,7 @@ const Footer = () => {
             Contact Us
           </Link>
           <Link to={"/tandc"} className='underline p-2 py-5 text-[#0057ff]'>
-            User Policy
-          </Link>
-          <Link to={"/tandc"} className='underline p-2 py-5 text-[#0057ff]'>
-            Data Privacy
-          </Link>
-          <Link to={"/tandc"} className='underline p-2 py-5 text-[#0057ff]'>
-            Terms of use
+            Privacy Policy
           </Link>
       </div>
 

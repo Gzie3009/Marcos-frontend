@@ -46,7 +46,7 @@ const Oppourtunities = () => {
                   {val.details}
                 </p>
                 </div>
-                <a target={"_blank"} href={"https://linkedin.com/in/"+val.name} class="flex mx-auto mt-16 text-white bg-[#0057FF] border-0 py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg">
+                <a target={"_blank"} href={val.link} class="flex mx-auto mt-16 text-white bg-[#0057FF] border-0 py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg">
                 Apply Now
                 </a>
               </div>
@@ -78,7 +78,7 @@ const Oppourtunities = () => {
                   {val.details}
                 </p>
                 </div>
-                <a target={"_blank"} href={"https://linkedin.com/in/"+val.name} class="flex mx-auto mt-16 text-white bg-[#0057FF] border-0 py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg">
+                <a target={"_blank"} href={val.link} class="flex mx-auto mt-16 text-white bg-[#0057FF] border-0 py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg">
                   Contribute
                 </a>
               </div>
@@ -113,7 +113,7 @@ const Oppourtunities = () => {
                   {val.details}
                 </p>
                 </div>
-                <a target={"_blank"} href={"https://linkedin.com/in/"+val.name} class="flex mx-auto mt-16 text-white bg-[#0057FF] border-0 py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg">
+                <a target={"_blank"} href={val.link} class="flex mx-auto mt-16 text-white bg-[#0057FF] border-0 py-2 px-8 focus:outline-none hover:bg-blue-700 rounded text-lg">
                   Contribute
                 </a>
               </div>
