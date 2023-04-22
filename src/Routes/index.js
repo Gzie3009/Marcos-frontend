@@ -9,6 +9,7 @@ import Oppourtunities from '../UI/Screens/Oppoutunities'
 import Alumni from '../UI/Screens/Alumni'
 import Webinars from '../UI/Screens/Webinars'
 import Signup from '../UI/Screens/Signup'
+import Admin from '../UI/Screens/Admin'
 const Routings = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Routings = () => {
             <Route path='/oppourtunity' element={<Oppourtunities/>}></Route>
             <Route path='/alumni' element={<Alumni/>}></Route>
             <Route path='/webinars' element={<Webinars/>}></Route>
+            <Route path='/app/fullaccess/admin' element={<Admin/>}></Route>
         </Routes>
         <Footer/>
     </>

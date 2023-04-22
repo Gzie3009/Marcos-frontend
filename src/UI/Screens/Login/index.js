@@ -17,8 +17,9 @@ const Login = () => {
           }
       })
       const data=await res.json()
-      if(data){
+      if(data.status===200){
         alert("Login Successfull")
+        localStorage.setItem("JWT",data.token);
       }
     }
 

@@ -18,7 +18,7 @@ const Navbar = () => {
                 Alumni
               </Link>
               <Link className="px-5" to={"/oppourtunity"}>
-                Oppourtunity
+                Oopportunities
               </Link>
               <Link className="px-5" to={"/webinars"}>
                 Webinars
@@ -30,7 +30,7 @@ const Navbar = () => {
           </div>
           <div className="w-1/2 flex px-10">
             <div className="flex w-full justify-end">
-              <Link to={"/register"} className="bg-[#0057FF] w-1/3 p-4 text-white rounded-lg hover:bg-indigo-600">Login / Register</Link>
+              <Link to={"/register"} className="bg-[#0057FF] w-1/3 p-4 text-white rounded-lg hover:bg-indigo-600 text-center">Login / Register</Link>
             </div>
           </div>
         </div>
